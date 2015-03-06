@@ -1,2 +1,2 @@
 # Post-System
-AngularJS Post System
+Simply AngularJS Post System
