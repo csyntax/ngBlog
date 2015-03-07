@@ -11,7 +11,7 @@ angular.module('blogApp', ['ngProgress', 'ng'])
         templateUrl: 'views/post.html'
       })
       .when('/about', {
-        themplateUrl: 'views/about.html'
+        templateUrl: 'views/about.html'
       })
       .otherwise({
         redirectTo: '/'
