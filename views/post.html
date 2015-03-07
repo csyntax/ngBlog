@@ -1,7 +1,7 @@
 <div class="posts">
     <h1 class="content-subhead"><a href="#!/"><< All posts</a></h1>
 
-    <section class="post">
+    <article class="post">
         <header class="post-header inside">
             <img class="post-avatar"
                  alt="{{post.author}} Avatar" data-ng-src="{{post.avatar}}"
@@ -11,11 +11,13 @@
 
               <p class="post-meta">
                   By <a href="#" class="post-author">{{post.author}}</a> under <a class="post-category post-category-js" href="#" ng-repeat="tag in post.tags">{{tag.title}}</a>
+                  <br>
+                  <p>Created on {{post.created}}</p>
               </p>
         </header>
 
         <div class="post-description">
             <div markdown link="{{post.file}}"></div>
         </div>
-    </section>
+    </article>
 </div>
