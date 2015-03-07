@@ -1,7 +1,6 @@
 'use strict';
 
-angular.module('blogApp')
-  .factory('Posts', function($http) {
+app.factory('Posts', function($http) {
     return{
       getPosts: function(callback){
         $http.get('/posts/posts.json').success(callback);

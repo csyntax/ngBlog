@@ -1,3 +1,6 @@
-<li ng-repeat="post in posts">
-  <a href="#!/posts/{{post.slug}}"><h3>{{post.title}}</h3></a>
-</li>
+ Search: <input ng-model="query"> 
+<ul class="posts-list">
+	<li ng-repeat="post in posts | filter:query ">
+  		<a href="#!/posts/{{post.slug}}"><h3>{{post.title}}</h3></a>
+	</li>
+</ul>  

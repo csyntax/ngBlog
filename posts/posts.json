@@ -8,8 +8,7 @@
     "author": "Ivan",
     "tags": [
       {"title" : "Javascript"},
-      {"title": "AngularJS"},
-	  {"title": "Test"}
+      {"title": "AngularJS"}
     ]
   },
   {
@@ -46,8 +45,7 @@
     "author": "Ambe",
     "tags": [
       {"title" : "Javascript"},
-      {"title": "AngularJS"},
-    {"title": "Test"}
+      {"title": "AngularJS"}
     ]
   },
   {

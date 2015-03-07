@@ -1,11 +1,12 @@
 <!doctype html>
-<html ng-app="blogApp">
+<html ng-app="PostsJS">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     
         <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/ngProgress.css">
         <link rel="stylesheet" href="styles/style.css">       
     </head>
     <body ng-controller="Main">
@@ -18,16 +19,14 @@
                 <li><a href="#!/about">About</a></li>
           </ul>
         </div>
-        <div class="col-sm-9 col-md-10 main">   
+        <div class="col-sm-9 col-md-10 main">
             <header>
                 <hgroup>
                     <h1 class="pull-left">{{config.title}}</h1>
                     <h2 class="pull-right">{{config.description}}</h2>
                 </hgroup>
             </header>
-         <div class="posts" ></div>
-            <ul class="posts-list" ng-view=""></ul>
-          
+            <div class="posts" ng-view></div>                    
         </div>
       </div>
     </div>
@@ -56,17 +55,13 @@
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
     <script src="scripts/angular-mocks.js"></script>
 
-    <script src="scripts/ngProgress.js"></script>
+    <script src="scripts/ngProgress.min.js"></script>
     <script src="scripts/showdown.min.js"></script>
 
-        <!-- build:js scripts/modules.js -->
-        
-        
-        <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/directives/MarkDown.js"></script>

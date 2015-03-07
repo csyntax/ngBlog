@@ -1,7 +1,8 @@
-'use strict';
+"use strict";
 
-angular.module('blogApp', ['ngProgress', 'ng'])
-  .config(function ($routeProvider, $locationProvider) {
+var app = angular.module('PostsJS', ['ngProgress','ngRoute']);
+
+  app.config(function ($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(false).hashPrefix('!');
     $routeProvider
       .when('/', {

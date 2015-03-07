@@ -1,11 +1,9 @@
 "use strict";
 
-var app = angular.module('blogApp');
-
-app.controller('Main', function ($scope, $window, Posts, Config, $routeParams, progressbar) {
+app.controller('Main', function ($scope, $window, Posts, Config, $routeParams, ngProgress) {
       
 
-
+$scope.Posts = Posts.query;
     Config.make();
 
     $scope.$on(
@@ -13,10 +11,10 @@ app.controller('Main', function ($scope, $window, Posts, Config, $routeParams, p
         function( $currentRoute, $previousRoute ){
 
             if( $routeParams.postTitle ){
-              progressbar.start();
+              ngProgress.start();
               Posts.getBySlug($routeParams.postTitle, function(data){
                 $scope.post = data;
-                progressbar.complete();
+                ngProgress.complete();
                 $window.document.title = $scope.post.title + " - " + $scope.config.title;
               });
             } else {

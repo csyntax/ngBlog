@@ -1,7 +1,6 @@
 'use strict';
 
-angular.module('blogApp')
-  .directive('markdown', function ($http) {
+app.directive('markdown', function ($http) {
     var converter = new Showdown.converter();
     return {
       restrict: 'A',
