@@ -1,0 +1,116 @@
+<!doctype html>
+<html ng-app="blogApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.1/pure-min.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,100' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body ng-controller="Main">
+        <div class="pure-g-r" id="layout">
+            <div class="sidebar pure-u">
+                <header class="header">
+                    <hgroup>
+                        <h1 class="brand-title">{{config.title}}</h1>
+                        <h2 class="brand-tagline">{{config.description}}</h2>
+                    </hgroup>
+                </header>
+                <nav>
+                    <ul>
+                        <li><a href="#!/">Home</a></li>
+                        <li><a href="#!/about">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        <div class="pure-u-1">
+            <div class="content">
+                <!-- A wrapper for all the blog posts -->
+                <div class="container" ng-view></div>
+
+                <footer class="footer">
+                    <div class="pure-menu pure-menu-horizontal pure-menu-open">
+                        <ul>
+                            <li><a data-ng-href="http://facebook.com/{{config.author.facebook}}">Facebook</li>
+                            <li><a data-ng-href="http://twitter.com/{{config.author.twitter}}">Twitter</a></li>
+                            <li><a data-ng-href="http://github.com/{{config.author.github}}">Github</a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-mocks.js"></script>
+    <script src="scripts/angular-sanitize.js"></script>
+    <script src="scripts/ngProgress.js"></script>
+    <script src="scripts/showdown.min.js"></script>
+
+        <!-- build:js scripts/modules.js -->
+        
+        
+        <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/directives/MarkDown.js"></script>
+        <script src="scripts/services/Config.js"></script>
+        <script src="scripts/services/Posts.js"></script>
+        <!-- endbuild -->
+
+    <script>
+
+        function Browser() {
+            var ua = navigator.userAgent,
+                M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [],
+                tem;
+
+            if(/trident/i.test(M[1])) {
+                tem = /\brv[ :]+(\d+)/g.exec(ua) || []; 
+                return {
+                    name:'IE ',
+                    version:( tem[1] || '' ) 
+                };
+            }   
+            if(M[1]==='Chrome') {
+                tem = ua.match(/\bOPR\/(\d+)/)
+                if(tem!=null) {
+                    return {
+                        name:'Opera',
+                         version:tem[1]
+                     };
+                }
+            }   
+
+            M=M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+
+            if((tem=ua.match(/version\/(\d+)/i))!=null) {
+                M.splice(1,1,tem[1]);
+            }
+
+            return {
+                name: M[0],
+                version: M[1]
+            };
+        }
+
+        var browser = new Browser();
+        
+        if (typeof browser === "object") {
+            if(browser.name === "MSIE" &&  browser.version < "9") {
+                var body = document.body;
+                body.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+
+</html>
