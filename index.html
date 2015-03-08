@@ -9,47 +9,42 @@
         <link rel="stylesheet" href="styles/style.css">       
     </head>
     <body ng-controller="Main">
-         <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-2 sidebar">
-          <img src="images/logo.png" class="img-responsive img-rounded logo">
-          <ul class="nav nav-sidebar">
-            <li><a href="#!/">Home</a></li>
-            <li><a href="#!/about">About</a></li>
-          </ul>
-        </div>
-        <div class="col-md-10 main">
-            <header>
-                <hgroup>
-                    <h1 class="pull-left">{{config.title}}</h1>
-                    <h2 class="pull-right">{{config.description}}</h2>
-                </hgroup>
-            </header>
-            <div class="posts" ng-view></div>                    
-        </div>
-      </div>
-    </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 sidebar">
+                    <img src="images/logo.png" class="img-responsive img-rounded logo">
+                    <ul class="nav nav-sidebar">
+                        <li><a href="#!/">Home</a></li>
+                        <li><a href="#!/about">About</a></li>
+                    </ul>                  
+                    <ul class="nav nav-sidebar social">
+                        <li><a ng-href="http://facebook.com/{{config.author.facebook}}">Facebook</a></li>
+                        <li><a ng-href="http://twitter.com/{{config.author.twitter}}">Twitter</a></li>
+                        <li><a ng-href="http://github.com/{{config.author.github}}">Github</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-10 main">
+                    <header>
+                        <hgroup>
+                            <h1 class="pull-left">{{config.title}}</h1>
+                            <h2 class="pull-right">{{config.description}}</h2>
+                        </hgroup>
+                    </header>
+                    <div class="posts" ng-view></div>                    
+                </div>
+            </div>        
+        </div>    
+        <footer>
+            <p>&copy 2015 Ivan Cvetomirov Ivanov</p>
+        </footer> 
 
-     
 
-
-        <div class="pure-u-1">
-            <div class="content">
-                <!-- A wrapper for all the blog posts -->
+       
+             
                
 
-                <footer class="footer">
-                    <div class="pure-menu pure-menu-horizontal pure-menu-open">
-                        <ul>
-                            <li><a data-ng-href="http://facebook.com/{{config.author.facebook}}">Facebook</li>
-                            <li><a data-ng-href="http://twitter.com/{{config.author.twitter}}">Twitter</a></li>
-                            <li><a data-ng-href="http://github.com/{{config.author.github}}">Github</a></li>
-                        </ul>
-                    </div>
-                </footer>
-            </div>
-        </div>
-    </div>
+                
+  
 
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>

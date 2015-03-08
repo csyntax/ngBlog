@@ -61,11 +61,34 @@
 .posts-list li a:focus {
   text-decoration: none;
   color: rgb(207, 194, 145);
-  /* border-bottom: 0.1em solid rgb(207, 194, 145); */
+}
+
+header {
+  border-bottom:0.1em solid rgb(207, 194, 145);
+  margin-bottom: 1em;
+  color: rgb(105, 93, 70);
 }
 
 header hgroup {
-  display: block;
   padding-bottom: 5em;
+}
+
+.btn-warning{
+  border: 0.1em solid rgb(207, 194, 145);
+  background-color: rgb(207, 194, 145);
+}
+
+.btn-warning:hover,
+.btn-warning:active,
+.btn-warning:focus{
+  border: 0.1em solid rgb(255, 246, 197);
+  background-color: rgb(255, 246, 197); 
+  color: rgb(207, 194, 145);
+}
+
+footer{
+  text-align: center;
+  margin-top: 3em;
   color: rgb(105, 93, 70);
+  font-size: 130%;
 }
