@@ -3,75 +3,12 @@
     "title": "Sample post",
     "slug": "sample-post",
     "file": "sample-post.md",
-    "created": "2013-09-27",
-    "avatar": "http://lorempixel.com/48/48",
+    "created": "2015-03-08",
     "author": "Ivan",
     "tags": [
-      {"title" : "Javascript"},
-      {"title": "AngularJS"}
-    ]
-  },
-  {
-    "title": "Test",
-    "file": "test.md",
-    "slug": "test",
-    "created": "2015-03-03",
-    "avatar": "http://lorempixel.com/48/48",
-    "author": "Ivan",
-    "tags": [
-      {"title" : "Javascript"},
+      {"title" : "JavaScript"},
       {"title": "AngularJS"},
-    {"title": "Test"}
-    ]
-  },
-   {
-    "title": "Test2",
-    "file": "test.md",
-    "slug": "test",
-    "created": "2015-03-03",
-    "avatar": "http://lorempixel.com/48/48",
-    "author": "Ivan",
-    "tags": [
-      {"title" : "Javascript"},
-      {"title": "AngularJS"},
-    {"title": "Test"}
-    ]
-  },{
-    "title": "Sample post",
-    "slug": "sample-post",
-    "file": "sample-post.md",
-    "created": "2013-09-27",
-    "avatar": "http://lorempixel.com/48/48",
-    "author": "Ambe",
-    "tags": [
-      {"title" : "Javascript"},
-      {"title": "AngularJS"}
-    ]
-  },
-  {
-    "title": "Test",
-    "file": "test.md",
-    "slug": "test",
-    "created": "2015-03-03",
-    "avatar": "http://lorempixel.com/48/48",
-    "author": "Ivan",
-    "tags": [
-      {"title" : "Javascript"},
-      {"title": "AngularJS"},
-    {"title": "Test"}
-    ]
-  },
-   {
-    "title": "Test2",
-    "file": "test.md",
-    "slug": "test",
-    "created": "2015-03-03",
-    "avatar": "http://lorempixel.com/48/48",
-    "author": "Ivan",
-    "tags": [
-      {"title" : "Javascript"},
-      {"title": "AngularJS"},
-    {"title": "Test"}
+      {"title": "Sample Post"}
     ]
   }
 ]

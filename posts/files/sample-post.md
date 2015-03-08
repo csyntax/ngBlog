@@ -1,3 +1,3 @@
-### Hello, this is bGular!
+### Hello
 
-This is a sample post that you can modify at `app/posts/files/sample-post.md`
+This is a sample post that you can modify at `posts/files/sample-post.md`
