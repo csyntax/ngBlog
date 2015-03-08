@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 app.directive('markdown', function ($http) {
     var converter = new Showdown.converter();
@@ -16,4 +16,4 @@ app.directive('markdown', function ($http) {
         });
       }
     };
-  });
+});
