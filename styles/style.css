@@ -1,6 +1,11 @@
+/* Hide for mobile, show later */
+
+
 .sidebar {
     top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
     padding-top: 2em;
     position: fixed; 
     display: block;
@@ -9,7 +14,6 @@
     background-color: rgb(207, 194, 145);
     border-right: 0.2em solid rgb(255, 246, 197);
 }
-
 .nav-sidebar {
   margin-top: 2em;
   margin-right: -2em;
@@ -30,7 +34,6 @@
 
 .main {
   margin-left: 15em;
-
 }
 @media (min-width: 768px) {
   .main {
@@ -38,9 +41,7 @@
     padding-left: 4em;
   }
 }
-.main .page-header {
-  margin-top: 0;
-}
+
 
 .posts-list{
   list-style: none;

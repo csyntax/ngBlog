@@ -2,19 +2,14 @@
     <h1 class="content-subhead"><a href="#!/"><< All posts</a></h1>
 
     <article class="post">
-        <header class="post-header inside">
-            <img class="post-avatar"
-                 alt="{{post.author}} Avatar" data-ng-src="{{post.avatar}}"
-                 height="48" width="48">
-
-            <h2 class="post-title">{{post.title}}</h2>
+      <h2>{{post.title}}</h2>
 
               <p class="post-meta">
                   By <a href="#" class="post-author">{{post.author}}</a> under <a class="post-category post-category-js" href="#" ng-repeat="tag in post.tags">{{tag.title}}</a>
                   <br>
                   <p>Created on {{post.created}}</p>
               </p>
-        </header>
+
 
         <div class="post-description">
             <div markdown link="{{post.file}}"></div>

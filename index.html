@@ -11,14 +11,14 @@
     <body ng-controller="Main">
          <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
+        <div class="col-md-2 sidebar">
           <img src="images/logo.png" class="img-responsive img-rounded logo">
           <ul class="nav nav-sidebar">
             <li><a href="#!/">Home</a></li>
             <li><a href="#!/about">About</a></li>
           </ul>
         </div>
-        <div class="col-sm-9 col-md-10 main">
+        <div class="col-md-10 main">
             <header>
                 <hgroup>
                     <h1 class="pull-left">{{config.title}}</h1>
@@ -53,11 +53,12 @@
 
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/angular.min.js"></script>
-    <script src="scripts/angular-route.min.js"></script>
-    <script src="scripts/angular-mocks.js"></script>
+    <script src="scripts/angular/angular.min.js"></script>
+    <script src="scripts/kendo.core.min.js"></script>
+    <script src="scripts/kendo.angular.min.js"></script>
+    <script src="scripts/angular/angular-route.min.js"></script>
+    <script src="scripts/angular/angular-mocks.js"></script>
 
-    <script src="scripts/ngProgress.min.js"></script>
     <script src="scripts/showdown.min.js"></script>
 
 
@@ -66,10 +67,8 @@
         <script src="scripts/directives/MarkDown.js"></script>
         <script src="scripts/services/Config.js"></script>
         <script src="scripts/services/Posts.js"></script>
-        <!-- endbuild -->
 
     <script>
-
         function Browser() {
             var ua = navigator.userAgent,
                 M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [],

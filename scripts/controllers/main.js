@@ -1,6 +1,6 @@
 "use strict";
 
-app.controller('Main', function ($scope, $window, Posts, Config, $routeParams, ngProgress) {
+app.controller('Main', function ($scope, $window, Posts, Config, $routeParams) {
       
 
 $scope.Posts = Posts.query;
@@ -11,10 +11,8 @@ $scope.Posts = Posts.query;
         function( $currentRoute, $previousRoute ){
 
             if( $routeParams.postTitle ){
-              ngProgress.start();
               Posts.getBySlug($routeParams.postTitle, function(data){
                 $scope.post = data;
-                ngProgress.complete();
                 $window.document.title = $scope.post.title + " - " + $scope.config.title;
               });
             } else {
