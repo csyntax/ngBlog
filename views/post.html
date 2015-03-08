@@ -3,18 +3,13 @@
       <span class="glyphicon glyphicon-chevron-left"></span> 
       All posts
     </a>
-
     <article class="post">
-      <h2>{{post.title}}</h2>
-
-              <p class="post-meta">
-                  By <a href="#" class="post-author">{{post.author}}</a> under <a class="post-category post-category-js" href="#" ng-repeat="tag in post.tags">{{tag.title}}</a>
-                  <br>
-                  <p>Created on {{post.created}}</p>
-              </p>
+        <h2>{{post.title}}</h2>
+        <p class="pull-left"><span class="label label-warning" ng-repeat="tag in post.tags">{{tag.title}}</span></p>
+        <p class="date pull-right">Created on <time datetime="{{post.created}}">{{post.created}}</time></p>
 
 
-        <div class="post-description">
+        <div class="post-content">
             <div markdown link="{{post.file}}"></div>
         </div>
     </article>

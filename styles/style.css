@@ -86,6 +86,25 @@ header hgroup {
   color: rgb(207, 194, 145);
 }
 
+.label{
+  margin-right: 0.3em;
+}
+.label-warning{
+  color: white;
+  background-color: rgb(207, 194, 145);
+  border: 0.1em solid rgb(207, 194, 145);
+}
+
+.post h2{
+  color: rgb(105, 93, 70);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.post .post-content {
+  padding-top: 3em;
+}
+
 footer{
   text-align: center;
   margin-top: 3em;
