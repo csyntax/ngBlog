@@ -1,0 +1,19 @@
+{
+  "name": "PostsJS",
+  "version": "1.0.0",
+  "description": "Simply AngularJS Post System.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slayer11/PostsJS.git"
+  },
+  "keywords": [
+    "PostJS"
+  ],
+  "author": "Ivan Ivanov",
+  "license": "Apache",
+  "homepage": "https://github.com/slayer11/PostsJS",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  }
+}

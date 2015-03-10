@@ -1,9 +1,9 @@
 # PostJS
 Simply AngularJS Post System.
 
-PostJS using AngualarJS, Twitter Bootstrap, KendoUI Angualar Directives. 
+PostJS is using AngualarJS, Twitter Bootstrap. 
 
-PostJS are loading posts from markdown files.
+PostJS is loading posts from markdown files.
 
 ##Installation
 `git clone https://github.com/slayer11/PostsJS.git`
