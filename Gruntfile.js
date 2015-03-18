@@ -24,6 +24,5 @@ module.exports = function (grunt) {
         }
     });
  
-    grunt.registerTask('default', ['connect', 'open','watch']);
- 
+    grunt.registerTask('default', ['connect', 'open','watch']); 
 }

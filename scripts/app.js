@@ -6,13 +6,13 @@ var app = angular.module('PostsJS', ['ngRoute']);
     $locationProvider.html5Mode(false).hashPrefix('!');
     $routeProvider
       .when('/', {
-        templateUrl: 'views/posts.html'
+        templateUrl: '_views/posts.html'
       })
       .when('/posts/:postTitle', {
-        templateUrl: 'views/post.html'
+        templateUrl: '_views/post.html'
       })
       .when('/about', {
-        templateUrl: 'views/about.html'
+        templateUrl: '_views/about.html'
       })
       .otherwise({
         redirectTo: '/'

@@ -16,7 +16,7 @@ app.factory('Config', function($http, $rootScope) {
 app.factory('Posts', function($http) {
     return{
       getPosts: function(callback){
-        $http.get('/posts/posts.json').success(callback);
+        $http.get('/_posts/posts.json').success(callback);
       },
       getBySlug: function(slug, callback){
         this.getPosts(function(data){
