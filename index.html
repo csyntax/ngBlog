@@ -1,12 +1,12 @@
 <!doctype html>
 <html ng-app="PostsJS">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
     
-        <link rel="stylesheet" href="styles/bootstrap.min.css">
-        <link rel="stylesheet" href="styles/style.css">   
+        <link rel="stylesheet" href="styles/bootstrap.min.css" />
+        <link rel="stylesheet" href="styles/style.css" />   
 
         <script src="scripts/jquery.min.js"></script>
         <script src="scripts/bootstrap.min.js"></script>
@@ -26,8 +26,8 @@
                 <div class="col-md-2 sidebar">
                     <img src="images/logo.png" class="img-responsive img-rounded logo">
                     <ul class="nav nav-sidebar">
-                        <li><a href="#!/">Home</a></li>
-                        <li><a href="#!/about">About</a></li>
+                        <li><a ng-href="#!/">Home</a></li>
+                        <li><a ng-href="#!/about">About</a></li>
                     </ul>                  
                     <ul class="nav nav-sidebar social">
                         <li><a ng-href="http://facebook.com/{{config.author.facebook}}">Facebook</a></li>
@@ -46,8 +46,6 @@
                 </div>
             </div>        
         </div>    
-        <footer>
-            <p>&copy 2015 {{config.author.name}}</p>
-        </footer>
+        <footer> &copy 2015 {{config.author.name}} </footer>
     </body>
 </html>

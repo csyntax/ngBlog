@@ -3,7 +3,7 @@
 </form>
 <ul class="media posts-list">
 	<li ng-repeat="post in posts | filter:query | orderBy: 'created': true ">
-	  	<a href="#!/posts/{{post.slug}}">
+	  	<a ng-href="#!/posts/{{post.slug}}">
 	  		<h3>{{post.title}}</h3>
 	  	</a>
 	</li>
