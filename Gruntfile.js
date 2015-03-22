@@ -1,8 +1,4 @@
 module.exports = function (grunt) {
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.loadNpmTasks('grunt-open');
- 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         connect: {
@@ -23,6 +19,10 @@ module.exports = function (grunt) {
             }
         }
     });
+
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-open');
  
-    grunt.registerTask('default', ['connect', 'open','watch']); 
+    grunt.registerTask('default', ['connect', 'open', 'watch']); 
 }
