@@ -11,3 +11,9 @@ PostJS is loading posts from markdown files.
 `npm install`
 
 `grunt`
+
+------------------
+todos
+-----------
+: add html5 mode
+: 
