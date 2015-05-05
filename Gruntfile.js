@@ -3,20 +3,20 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
         typescript: {
             base: {
-                src: ['scripts/ts/*.ts'],
+                src: ['scripts/*.ts'],
                 dest: 'scripts/',
                 options: {
                     module: 'amd',
                     target: 'es5',
-                    basePath: 'scripts/ts',
+                    basePath: "scripts",
                     sourceMap: false,
                     declaration: true,
                     removeComments: true,
                     references: [
-                        "scripts/libs/ts/jquery.d.ts",
-                        "scripts/libs/ts/angular.d.ts", 
-                        "scripts/libs/ts/angular-route.d.ts",
-                        "scripts/libs/ts/showdown.d.ts"
+                        "scripts/ts/jquery.d.ts",
+                        "scripts/ts/angular.d.ts", 
+                        "scripts/ts/angular-route.d.ts",
+                        "scripts/ts/showdown.d.ts"
                     ]
                 }
             }
@@ -35,7 +35,7 @@ module.exports = function (grunt) {
         },
         open: {
             dev: {
-                path: 'http://localhost:8080/index.html'
+                path: 'http://localhost:8080'
             }
         }
     });
