@@ -7,9 +7,3 @@ Simply AngularJS Post System.
 `npm install`
 
 `grunt`
-
-------------------
-todos
------------
-: add html5 mode
-: 
