@@ -1,7 +1,3 @@
-
-
-"use strict";
-
 app.factory('Config', function($http, $rootScope) {
     return {
       make: function() {

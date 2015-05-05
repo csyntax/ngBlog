@@ -1,7 +1,3 @@
-
-
-"use strict";
-
 var app = angular.module('PostsJS', ['ngRoute']);
 
 app.config(function ($routeProvider, $locationProvider) {

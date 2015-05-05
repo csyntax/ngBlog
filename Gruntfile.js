@@ -21,6 +21,9 @@ module.exports = function (grunt) {
                 }
             }
         },
+        watch: {
+            files: "*"
+        },
         connect: {
             server: {
                 options: {
@@ -29,9 +32,6 @@ module.exports = function (grunt) {
                     base: './'
                 }
             }
-        },
-        watch: {
-            files: '*'
         },
         open: {
             dev: {

@@ -1,7 +1,3 @@
-
-
-"use strict";
-
 app.controller('Main', function ($scope, $window, $routeParams, Posts, Config) {
   $scope.Config = Config;
   $scope.Posts = Posts.query;
