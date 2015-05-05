@@ -22,31 +22,32 @@
         <script src="scripts/services.js"></script>    
     </head>
     <body ng-controller="Main">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-2 sidebar">
-                    <img src="images/logo.png" class="img-responsive img-rounded logo">
-                    <ul class="nav nav-sidebar">
-                        <li><a ng-href="#!/">Home</a></li>
-                        <li><a ng-href="#!/about">About</a></li>
-                    </ul>                  
-                    <ul class="nav nav-sidebar social">
-                        <li><a ng-href="http://facebook.com/{{config.author.facebook}}">Facebook</a></li>
-                        <li><a ng-href="http://twitter.com/{{config.author.twitter}}">Twitter</a></li>
-                        <li><a ng-href="http://github.com/{{config.author.github}}">Github</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-10 main">
-                    <header>
-                        <hgroup>
-                            <h1 class="pull-left">{{config.title}}</h1>
-                            <h2 class="pull-right">{{config.description}}</h2>
-                        </hgroup>
-                    </header>
-                    <main ng-view></main>                    
-                </div>
-            </div>        
-        </div>    
-        <footer> &copy 2015 {{config.author.name}} </footer>
+       <div class="container-fluid">
+			   <div class="row">
+          <div class="col-sm-3 col-md-2 sidebar">
+            <img src="images/logo.png">
+            <ul class="nav nav-sidebar">
+              <li><a href="#!/">Home</a></li>
+              <li><a href="#!/about">About</a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+              <li><a href="http://facebook.com/{{config.author.facebook}}">Facebook</a></li>
+              <li><a href="http://twitter.com/{{config.author.twitter}}">Twitter</a></li>
+              <li><a href="http://github.com/{{config.author.github}}">Github</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <header>
+              <hgroup>
+                <h1 class="pull-left">{{config.title}}</h1>
+                <h2 class="pull-right">{{config.description}}</h2>
+              </hgroup>
+            </header>
+            <main ng-view></main> 
+          </div>
+        </div>
+      </div>
+  
+      <footer> &copy 2015 {{config.author.name}} </footer>
     </body>
 </html>
