@@ -10,6 +10,7 @@ app.factory('Config', function ($http, $rootScope) {
         }
     };
 });
+
 app.factory('Posts', function ($http) {
     return {
         getPosts: function (callback) {

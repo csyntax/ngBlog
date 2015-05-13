@@ -1,6 +1,8 @@
-var app = angular.module('PostsJS', ['ngRoute']);
+var app = angular.module('ngPosts', ['ngRoute']);
+
 app.config(function ($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(false).hashPrefix('!');
+    
     $routeProvider.when('/', {
         templateUrl: 'views/home.html'
     }).when('/posts/:postTitle', {

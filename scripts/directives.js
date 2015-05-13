@@ -1,5 +1,6 @@
 app.directive('markdown', function ($http) {
     var converter = new Showdown.converter();
+    
     return {
         restrict: 'A',
         scope: { link: '@' },

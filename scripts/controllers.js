@@ -1,7 +1,9 @@
 app.controller("Main", function ($scope, $window, $routeParams, Posts, Config) {
     $scope.Config = Config;
     $scope.Posts = Posts.query;
+    
     Config.make();
+
     $scope.$on("$routeChangeSuccess", function ($currentRoute, $previousRoute) {
         if ($routeParams.postTitle) {
             Posts.getBySlug($routeParams.postTitle, function (post) {
