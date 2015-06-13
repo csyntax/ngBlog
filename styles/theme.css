@@ -43,8 +43,6 @@ img {
   }
 }
 
-
-
 .posts-list{
   list-style: none;
   margin-left: -2.3em;
@@ -52,7 +50,7 @@ img {
 
 .posts-list li {
   display: block;
-  border-bottom: 0.1em solid rgb(105, 93, 70); 
+  border-bottom: 0.1em solid rgb(105, 93, 70);
 }
 
 .posts-list li a {
@@ -84,7 +82,7 @@ header hgroup {
 .btn-warning:active,
 .btn-warning:focus{
   border: 0.1em solid rgb(255, 246, 197);
-  background-color: rgb(255, 246, 197); 
+  background-color: rgb(255, 246, 197);
   color: rgb(207, 194, 145);
 }
 

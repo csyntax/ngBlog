@@ -1,8 +1,7 @@
 {
   "name": "ngPosts",
   "version": "2.0.2",
-  "description": "Simply AngularJS Post System.",
-  "private": true,
+  "description": "Simply AngularJS Post System",
   "repository": {
     "type": "git",
     "url": "https://github.com/slayer11/PostsJS.git"
