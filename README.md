@@ -1,2 +1,2 @@
 # ngPosts
-Simply AngularJS Post System.
+AngularJS Post System.
