@@ -1,7 +1,6 @@
 module.exports = function (grunt) {
     grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
-
+        pkg: grunt.file.readJSON("package.json"),
         watch: {
             files: [
                 "*.html",
@@ -14,20 +13,20 @@ module.exports = function (grunt) {
                 options: {
                     hostname: "localhost",
                     port: 7000,
-                    base: './'
+                    base: "./"
                 }
             }
         },
         open: {
             dev: {
-                path: 'http://localhost:7000'
+                path: "http://localhost:7000"
             }
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-open');
+    grunt.loadNpmTasks("grunt-contrib-connect");
+    grunt.loadNpmTasks("grunt-contrib-watch");
+    grunt.loadNpmTasks("grunt-open");
 
-    grunt.registerTask('default', ['connect', 'open', 'watch']);
+    grunt.registerTask("default", ["connect", "open", "watch"]);
 }

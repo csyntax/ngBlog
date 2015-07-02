@@ -1,4 +1,4 @@
-app.factory('Config', function ($http, $rootScope) {
+app.factory("Config", function ($http, $rootScope) {
     return {
         make: function () {
             this.getConfigFile(function (data) {
@@ -6,15 +6,15 @@ app.factory('Config', function ($http, $rootScope) {
             });
         },
         getConfigFile: function (callback) {
-            $http.get('config.json').success(callback);
+            $http.get("config.json").success(callback);
         }
     };
 });
 
-app.factory('Posts', function ($http) {
+app.factory("Posts", function ($http) {
     return {
         getPosts: function (callback) {
-            $http.get('/posts/posts.json').success(callback);
+            $http.get("/posts/posts.json").success(callback);
         },
         getBySlug: function (slug, callback) {
             this.getPosts(function (data) {
