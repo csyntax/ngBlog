@@ -1,4 +1,4 @@
-app.controller("Main", function ($scope, $window, $routeParams, Posts, Config) {
+app.controller("Main", function ($scope, $window, $routeParams, Config, Posts) {
     $scope.Config = Config;
     $scope.Posts = Posts.query;
 

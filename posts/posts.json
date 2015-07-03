@@ -5,31 +5,9 @@
     "file": "sample-post.md",
     "created": "2015-03-08",
     "tags": [
+      {"title": "Sample Post"},
       {"title" : "JavaScript"},
-      {"title": "AngularJS"},
-      {"title": "Sample Post"}
-    ]
-  },
-  {
-    "title": "Sample post",
-    "slug": "sample-post",
-    "file": "sample-post.md",
-    "created": "2015-03-08",
-    "tags": [
-      {"title" : "JavaScript"},
-      {"title": "AngularJS"},
-      {"title": "Sample Post"}
-    ]
-  },
-  {
-    "title": "Sample post",
-    "slug": "sample-post",
-    "file": "sample-post.md",
-    "created": "2015-03-08",
-    "tags": [
-      {"title" : "JavaScript"},
-      {"title": "AngularJS"},
-      {"title": "Sample Post"}
+      {"title": "AngularJS"}
     ]
   }
 ]
