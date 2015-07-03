@@ -1,7 +1,7 @@
 app.controller("Main", function ($scope, $window, $routeParams, Posts, Config) {
     $scope.Config = Config;
     $scope.Posts = Posts.query;
-    
+
     Config.make();
 
     $scope.$on("$routeChangeSuccess", function ($currentRoute, $previousRoute) {
@@ -10,8 +10,7 @@ app.controller("Main", function ($scope, $window, $routeParams, Posts, Config) {
                 $scope.post = post;
                 $window.document.title = $scope.post.title + " - " + $scope.config.title;
             });
-        }
-        else {
+        } else {
             $window.document.title = $scope.config.title + " - " + $scope.config.description;
             Posts.getPosts(function (posts) {
                 $scope.posts = posts;

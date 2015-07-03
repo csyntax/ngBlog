@@ -11,7 +11,7 @@
     "AngularJS"
   ],
   "author": "Ivan Ivanov",
-  "license": "Apache",
+  "license": "MIT",
   "homepage": "https://github.com/slayer11/PostsJS",
   "devDependencies": {
     "grunt": "0.4.5",
