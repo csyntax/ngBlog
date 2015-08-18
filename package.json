@@ -1,10 +1,10 @@
 {
   "name": "ngPosts",
-  "version": "3.0.0",
-  "description": "AngularJS Post System",
+  "version": "4.0.0",
+  "description": "AngularJS Blog System",
   "repository": {
     "type": "git",
-    "url": "https://github.com/slayer11/PostsJS.git"
+    "url": "https://github.com/csyntax/ngBlog.git"
   },
   "keywords": [
     "PostJS",
@@ -12,7 +12,6 @@
   ],
   "author": "Ivan Ivanov",
   "license": "MIT",
-  "homepage": "https://github.com/slayer11/PostsJS",
   "devDependencies": {
     "grunt": "0.4.5",
     "grunt-cli": "^0.1.13",
