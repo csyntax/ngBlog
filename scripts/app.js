@@ -1,4 +1,4 @@
-var app = angular.module("ngPosts", ["ngRoute"]);
+var app = angular.module("ngBlog", ["ngRoute"]);
 
 app.config(function ($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(false).hashPrefix("!");

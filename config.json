@@ -1,12 +1,12 @@
 [
   {
-    "title": "ngPosts",
-    "description": "AngularJS posts system",
+    "title": "ngBlog",
+    "description": "AngularJS Blog System",
     "author": {
 		    "name": "Ivan Ivanov",
+        "facebook": "slayer.word.11",
 		    "twitter": "slayer_word_11",
-		    "github": "slayer11",
-		    "facebook": "slayer.word.11"
+		    "github": "csyntax"		    
     }
   }
 ]
