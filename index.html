@@ -1,52 +1,49 @@
 <!doctype html>
 <html ng-app="ngBlog">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-		    <meta name="fragment" content="!" />
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="fragment" content="!" />
 
-        <link rel="stylesheet" href="styles/bootstrap.min.css" />
-        <link rel="stylesheet" href="styles/theme.css" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
 
-       <!--- <script src="scripts/libs/jquery.min.js"></script>-->
-        <script src="scripts/libs/bootstrap.min.js"></script>
-        <script src="scripts/libs/angular.min.js"></script>
-        <script src="scripts/libs/angular-route.min.js"></script>
-        <script src="scripts/libs/showdown.min.js"></script>
+    <script src="scripts/libs/jquery.min.js"></script>
+    <script src="scripts/libs/bootstrap.min.js"></script>
+    <script src="scripts/libs/angular.min.js"></script>
+    <script src="scripts/libs/angular-route.min.js"></script>
+    <script src="scripts/libs/showdown.min.js"></script>
 
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers.js"></script>
-        <script src="scripts/directives.js"></script>
-        <script src="scripts/services.js"></script>
-    </head>
-    <body ng-controller="Main">
-       <div class="container-fluid">
-			   <div class="row">
-          <div class="col-sm-3 col-md-2 sidebar">
-            <img src="images/logo.svg">
-            <ul class="nav nav-sidebar">
-              <li><a href="#!/">Home</a></li>
-              <li><a href="#!/about">About</a></li>
-            </ul>
-            <ul class="nav nav-sidebar">
-              <li><a href="http://facebook.com/{{config.author.facebook}}">Facebook</a></li>
-              <li><a href="http://twitter.com/{{config.author.twitter}}">Twitter</a></li>
-              <li><a href="http://github.com/{{config.author.github}}">Github</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <header>
-              <hgroup>
-                <h1 class="pull-left">{{config.title}}</h1>
-                <h2 class="pull-right">{{config.description}}</h2>
-              </hgroup>
-            </header>
-            <main ng-view></main>
-          </div>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers.js"></script>
+    <script src="scripts/directives.js"></script>
+    <script src="scripts/services.js"></script>
+  </head>
+  <body ng-controller="Main">
+    <div class="container-fluid">
+		  <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <img src="images/logo.svg">
+          <ul class="nav nav-sidebar">
+            <li><a href="#!/">Home</a></li>
+             <li><a href="#!/about">About</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://facebook.com/{{config.author.facebook}}">Facebook</a></li>
+            <li><a href="http://twitter.com/{{config.author.twitter}}">Twitter</a></li>
+            <li><a href="http://github.com/{{config.author.github}}">Github</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <header>
+            <h1 class="pull-left">{{config.title}}</h1>
+            <h2 class="pull-right">{{config.description}}</h2>
+          </header>
+          <main ng-view></main>
         </div>
       </div>
-
-      <footer> &copy 2015 {{config.author.name}} </footer>
-    </body>
+    </div>
+    <footer> &copy 2015 {{config.author.name}} </footer>
+  </body>
 </html>

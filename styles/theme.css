@@ -43,59 +43,56 @@ img {
   }
 }
 
-.posts-list{
+.posts {
   list-style: none;
   margin-left: -2.3em;
 }
 
-.posts-list li {
+.posts li {
   display: block;
   border-bottom: 0.1em solid rgb(105, 93, 70);
 }
 
-.posts-list li a {
+.posts li a {
    color: rgb(105, 93, 70);
 }
 
-.posts-list li a:hover,
-.posts-list li a:focus {
+.posts li a:hover,
+.posts li a:focus {
   text-decoration: none;
   color: rgb(207, 194, 145);
 }
 
 header {
-  border-bottom:0.1em solid rgb(207, 194, 145);
   margin-bottom: 1em;
+  padding-bottom: 5em;
+  border-bottom: 0.1em solid rgb(207, 194, 145);
   color: rgb(105, 93, 70);
 }
 
-header hgroup {
-  padding-bottom: 5em;
-}
-
-.btn-warning{
+.btn-warning {
   border: 0.1em solid rgb(207, 194, 145);
   background-color: rgb(207, 194, 145);
 }
 
 .btn-warning:hover,
 .btn-warning:active,
-.btn-warning:focus{
+.btn-warning:focus {
   border: 0.1em solid rgb(255, 246, 197);
   background-color: rgb(255, 246, 197);
   color: rgb(207, 194, 145);
 }
 
-.label{
+.label {
   margin-right: 0.3em;
 }
-.label-warning{
+.label-warning {
   color: white;
   background-color: rgb(207, 194, 145);
   border: 0.1em solid rgb(207, 194, 145);
 }
 
-.post h2{
+.post h2 {
   color: rgb(105, 93, 70);
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -105,7 +102,7 @@ header hgroup {
   padding-top: 3em;
 }
 
-footer{
+footer {
   text-align: center;
   margin-top: 3em;
   color: rgb(105, 93, 70);
