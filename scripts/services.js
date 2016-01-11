@@ -2,7 +2,7 @@ app.factory("Config", function ($http, $rootScope) {
     return {
         make: function () {
             this.getConfigFile(function (data) {
-                $rootScope.config = data[0];
+                $rootScope.config = data;
             });
         },
         getConfigFile: function (callback) {
@@ -14,7 +14,7 @@ app.factory("Config", function ($http, $rootScope) {
 app.factory("Posts", function ($http) {
     return {
         getPosts: function (callback) {
-            $http.get("/posts/posts.json").success(callback);
+            $http.get("posts.json").success(callback);
         },
         getBySlug: function (slug, callback) {
             this.getPosts(function (data) {

@@ -1,5 +1,4 @@
-[
-  {
+{
     "title": "ngBlog",
     "description": "AngularJS Blog System",
     "author": {
@@ -8,5 +7,4 @@
 		    "twitter": "slayer_word_11",
 		    "github": "csyntax"		    
     }
-  }
-]
+}

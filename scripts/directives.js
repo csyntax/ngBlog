@@ -9,7 +9,7 @@ app.directive("markdown", function ($http) {
         link: function (scope, element, attrs) {
             attrs.$observe("link", function (link) {
                 if (link) {
-                    $http.get("/posts/files/" + link).success(function (response) {
+                    $http.get("/posts/" + link).success(function (response) {
                         var htmlText = converter.makeHtml(response);
                         element.html(htmlText);
                     });

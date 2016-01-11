@@ -1,4 +1,4 @@
-app.controller("Main", function ($scope, $window, $routeParams, Config, Posts) {
+/*app.controller("Main", function ($scope, $window, $routeParams, Config, Posts) {
     $scope.Config = Config;
     $scope.Posts = Posts.query;
 
@@ -17,7 +17,7 @@ app.controller("Main", function ($scope, $window, $routeParams, Config, Posts) {
             });
         }
     });
-});
+});*/
 
 app.controller("BaseController", ["$scope", "Config", function ($scope, Config) {
     $scope.Config = Config;
