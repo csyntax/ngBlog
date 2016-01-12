@@ -1,4 +1,4 @@
-var Posts = function ($http) {
+app.factory("Posts", ["$http", function ($http) {
 	return {
 		getPosts: function (callback) {
 			$http.get("posts.json").success(callback);
@@ -13,4 +13,4 @@ var Posts = function ($http) {
 			});
 		}
 	};
-};
+}]);

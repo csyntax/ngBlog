@@ -1,4 +1,4 @@
-var Config = function ($http, $rootScope) {
+app.factory("Config", ["$http", "$rootScope", function ($http, $rootScope) {
 	return {
 		getConfigFile: function (callback) {
 			$http.get("config.json").success(callback);
@@ -7,6 +7,6 @@ var Config = function ($http, $rootScope) {
 			this.getConfigFile(function (data) {
 				$rootScope.config = data;
 			});
-		}     
+		}
 	};
-};
+}]);

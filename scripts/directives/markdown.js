@@ -1,4 +1,4 @@
-var markdownDirective = function ($http) {
+app.directive("markdown", ["$http", function ($http) {
 	var converter = new showdown.Converter();
 
 	return {
@@ -17,4 +17,4 @@ var markdownDirective = function ($http) {
 			});
 		}
 	};
-}
+}]);
