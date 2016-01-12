@@ -11,8 +11,7 @@ var config = function ($routeProvider, $locationProvider, $httpProvider) {
 			controller: "PostController"
 		})
 		.when("/about", {
-			templateUrl: "views/about.html",
-			controller: "PageController"
+			templateUrl: "views/about.html"
 		})
 		.otherwise({
 			redirectTo: "/"

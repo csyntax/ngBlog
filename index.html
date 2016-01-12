@@ -18,11 +18,15 @@
 		<script src="bower_components/angular-route/angular-route.min.js"></script>
 		<script src="bower_components/showdown/dist/showdown.js"></script>
 		
+		<script src="scripts/controllers/BaseController.js"></script>
+		<script src="scripts/controllers/PostsController.js"></script>
+		<script src="scripts/controllers/PostController.js"></script>
+		<script src="scripts/directives/markdown.js"></script>
+		<script src="scripts/services/Config.js"></script>
+		<script src="scripts/services/Posts.js"></script>
+
 		<script src="scripts/config.js"></script>
 		<script src="scripts/app.js"></script>
-		<script src="scripts/controllers.js"></script>
-		<script src="scripts/directives.js"></script>
-		<script src="scripts/services.js"></script>
 	</head>
 	<body ng-controller="BaseController">
 		<div class="container-fluid">
@@ -61,7 +65,9 @@
 	  		</div>
 		</div>
 		<footer> 
-			<p>&copy 2015 {{config.author.name}}</p>
+			<p>
+				&copy 2015 {{config.author.name}}
+			</p>
 		</footer>
 	</body>
 </html>
