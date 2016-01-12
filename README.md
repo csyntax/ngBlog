@@ -1,2 +1,3 @@
-# ngPosts
-AngularJS Post System.
+# ngBlog
+
+Simply AngularJS blog system.
