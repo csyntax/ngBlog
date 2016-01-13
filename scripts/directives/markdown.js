@@ -6,10 +6,11 @@ app.directive("markdown", ["$http", function ($http) {
 		scope: {
 		  link: "@"
 		},
-		link: function (scope, element, attrs) {
+		link: function (scope, element, attrs, controller) {
 			attrs.$observe("link", function (link) {
 				if (link) {
-					$http.get("/posts/" + link).success(function (response) {
+					var post = "/posts/" + link + ".md";
+					$http.get(post).success(function (response) {
 						var htmlText = converter.makeHtml(response);
 						element.html(htmlText);
 					});

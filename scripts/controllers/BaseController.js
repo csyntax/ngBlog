@@ -1,5 +1,9 @@
-app.controller("BaseController", ["$scope", "Config", function ($scope, Config) {
-    $scope.Config = Config;
+app.controller("BaseController", ["$scope", "Config", "Page", function ($scope, Config, Page) {
+	$scope.Config = Config;
 
-    Config.make();
+	Config.make();
+
+	Page.getPages(function (pages) {
+		$scope.pages = pages;
+	});
 }]);
