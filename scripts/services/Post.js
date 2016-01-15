@@ -1,4 +1,4 @@
-app.factory("Posts", ["$http", function ($http) {
+app.factory("Post", ["$http", function ($http) {
 	return {
 		getPosts: function (callback) {
 			$http.get("posts.json").success(callback);

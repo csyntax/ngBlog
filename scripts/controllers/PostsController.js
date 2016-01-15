@@ -1,7 +1,7 @@
-app.controller("PostsController", ["$scope", "$window","Posts", function ($scope, $window, Posts) {
+app.controller("PostsController", ["$scope", "$window","Post", function ($scope, $window, Post) {
     $window.document.title = "Home";
 
-    Posts.getPosts(function (posts) {
+    Post.getPosts(function (posts) {
         $scope.posts = posts;
     });
 }]);

@@ -17,7 +17,7 @@
 		
 		<script src="scripts/app.js"></script>
 		<script src="scripts/services/Config.js"></script>
-		<script src="scripts/services/Posts.js"></script>
+		<script src="scripts/services/Post.js"></script>
 		<script src="scripts/services/Page.js"></script>
 		<script src="scripts/directives/markdown.js"></script>
 		<script src="scripts/directives/page.js"></script>
@@ -36,10 +36,14 @@
 							<li>
 								<a href="/#!/">Home</a>
 							</li>
-					 		<li>
-					 			<a href="/#!/pages/about">About</a>
-					 		</li>
 				  		</ul>
+				  		<ul class="nav nav-sidebar">
+		  					<li ng-repeat="page in pages">
+		  						<a ng-href="/#!/pages/{{page.slug}}">
+		  							{{page.title}}
+		  						</a>
+		  					</li>
+		  				</ul>
 				  		<ul class="nav nav-sidebar">
 							<li>
 								<a href="http://facebook.com/{{config.author.facebook}}">Facebook</a>
@@ -50,13 +54,6 @@
 							<li>
 								<a href="http://github.com/{{config.author.github}}">Github</a>
 							</li>
-		  				</ul>
-		  				<ul class="nav nav-sidebar">
-		  					<li ng-repeat="page in pages">
-		  						<a ng-href="/#!/pages/{{page.slug}}">
-		  							{{page.title}}
-		  						</a>
-		  					</li>
 		  				</ul>
 		  			</nav>
 				</div>
